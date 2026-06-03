@@ -1,0 +1,493 @@
+:root {
+  --bg: #F8F7F4;
+  --panel: #FFFFFF;
+  --text: #1A1A2E;
+  --muted: #6F7682;
+  --line: #E2E4E8;
+  --blue: #2D5FA8;
+  --blue-muted: #8B9EB7;
+  --risk: #C45C3A;
+  --warning: #E8A24A;
+  --low: #B0BAC4;
+  --shadow: 0 1px 0 rgba(26,26,46,.04);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  font-family: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-shell { width: min(1440px, calc(100vw - 40px)); margin: 0 auto; padding: 28px 0 48px; }
+.site-header { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 22px; }
+h1, h2, h3, p { margin: 0; }
+h1 { font-size: clamp(34px, 4vw, 58px); letter-spacing: -0.055em; line-height: .95; }
+h2 { font-size: 21px; letter-spacing: -0.025em; }
+h3 { font-size: 15px; margin-bottom: 10px; }
+.eyebrow { color: var(--blue); text-transform: uppercase; font-size: 11px; letter-spacing: .12em; font-weight: 700; margin-bottom: 8px; }
+.muted { color: var(--muted); font-size: 14px; }
+.header-meta { color: var(--muted); font-size: 13px; border: 1px solid var(--line); padding: 8px 10px; border-radius: 999px; background: rgba(255,255,255,.55); }
+
+.tabs { display: flex; gap: 8px; border-bottom: 1px solid var(--line); margin-bottom: 18px; }
+.tab { appearance: none; border: 0; background: transparent; padding: 14px 16px; font: inherit; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; }
+.tab.is-active { color: var(--text); border-color: var(--blue); font-weight: 600; }
+
+.view { display: none; }
+.view.is-active { display: block; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+.filter-bar { display: grid; grid-template-columns: 1.15fr 1.7fr .8fr .9fr 1.1fr; gap: 12px; padding: 14px; margin-bottom: 16px; }
+label { display: grid; gap: 6px; color: var(--muted); font-size: 12px; font-weight: 600; }
+select { width: 100%; border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 10px 11px; font: 500 14px "IBM Plex Sans"; color: var(--text); outline: none; }
+select:focus { border-color: var(--blue); }
+.dashboard-grid { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 16px; align-items: start; }
+.vulnerability-grid { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 16px; align-items: start; }
+.chart-card { min-height: 620px; padding: 18px; }
+.full-width { width: 100%; }
+.card-head { display: flex; justify-content: space-between; align-items: start; gap: 16px; margin-bottom: 12px; }
+.plot { width: 100%; height: 520px; }
+.plot.tall { height: 620px; }
+.source-note { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 1.45; }
+.side-panel { padding: 18px; position: sticky; top: 16px; }
+.side-panel h2 { margin-bottom: 5px; }
+.snapshot { display: grid; gap: 14px; margin: 20px 0; }
+.snapshot-section { border-top: 1px solid var(--line); padding-top: 12px; }
+.metric-row { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-bottom: 1px solid rgba(226,228,232,.65); }
+.metric-row span:first-child { color: var(--muted); }
+.metric-value, td.value { font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 500; }
+.primary-btn, .ghost-btn { appearance: none; border-radius: 999px; padding: 10px 14px; font: 600 13px "IBM Plex Sans"; cursor: pointer; }
+.primary-btn { border: 1px solid var(--blue); background: var(--blue); color: #fff; width: 100%; }
+.primary-btn:disabled { opacity: .45; cursor: not-allowed; }
+.ghost-btn { border: 1px solid var(--line); background: #fff; color: var(--muted); }
+.risk-badges { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 16px; }
+.badge { border: 1px solid var(--line); border-radius: 14px; padding: 10px; }
+.badge small { color: var(--muted); display: block; margin-bottom: 5px; }
+.dots { display: flex; gap: 4px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
+.dot.on.low { background: var(--low); }
+.dot.on.medium { background: var(--warning); }
+.dot.on.high { background: var(--risk); }
+.country-layout { display: grid; }
+.country-layout > .card { padding: 20px; }
+.compact-label { min-width: 250px; }
+.country-header { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 18px 0 22px; }
+.kpi { border: 1px solid var(--line); border-radius: 16px; padding: 14px; background: #fff; }
+.kpi .label { color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+.kpi .num { font: 600 22px "IBM Plex Mono"; }
+.country-tables { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+details { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: #fff; }
+summary { padding: 14px 16px; font-weight: 700; cursor: pointer; border-bottom: 1px solid var(--line); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { padding: 10px 12px; border-bottom: 1px solid rgba(226,228,232,.65); text-align: right; vertical-align: top; }
+th:first-child, td:first-child { text-align: left; }
+th { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+.risk-list { display: grid; gap: 12px; margin-top: 16px; max-height: 640px; overflow: auto; }
+.risk-item { border-top: 1px solid var(--line); padding-top: 12px; }
+.risk-item strong { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+.risk-pill { font-size: 11px; border-radius: 999px; padding: 2px 8px; border: 1px solid var(--line); color: var(--muted); }
+.risk-pill.high { color: var(--risk); border-color: rgba(196,92,58,.35); }
+.risk-pill.medium { color: #9A6419; border-color: rgba(232,162,74,.4); }
+.risk-item ul { margin: 6px 0 0 18px; padding: 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+
+@media (max-width: 1050px) {
+  .filter-bar { grid-template-columns: repeat(2, 1fr); }
+  .dashboard-grid, .vulnerability-grid { grid-template-columns: 1fr; }
+  .side-panel { position: static; }
+  .country-header, .country-tables { grid-template-columns: 1fr; }
+}
+@media (max-width: 680px) {
+  .app-shell { width: min(100vw - 24px, 1440px); padding-top: 18px; }
+  .site-header { display: block; }
+  .header-meta { display: inline-block; margin-top: 14px; }
+  .filter-bar { grid-template-columns: 1fr; }
+  .tabs { overflow-x: auto; }
+  .card-head { display: block; }
+  .plot, .plot.tall { height: 480px; }
+}
+
+
+/* Patch: radar país + heatmap desglosado + fondo azul oscuro sutil */
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(45, 95, 168, 0.24), transparent 34%),
+    radial-gradient(circle at 82% 10%, rgba(12, 37, 79, 0.30), transparent 32%),
+    linear-gradient(135deg, #081A33 0%, #0B2142 42%, #071426 100%) !important;
+  background-attachment: fixed;
+}
+
+.radar-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 16px;
+  margin: 0 0 22px;
+}
+
+.radar-card,
+.radar-explain,
+.risk-help {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.radar-card {
+  padding: 18px;
+}
+
+.radar-card h3 {
+  margin: 2px 0 4px;
+}
+
+.radar-plot {
+  height: 420px;
+}
+
+.radar-explain {
+  padding: 18px;
+  align-self: stretch;
+}
+
+.radar-score-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(226, 228, 232, .75);
+}
+
+.radar-score-row span {
+  color: var(--muted);
+}
+
+.radar-score-row strong {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 18px;
+}
+
+.radar-note,
+.heatmap-note {
+  max-width: 760px;
+  line-height: 1.45;
+}
+
+.heatmap-note {
+  margin-bottom: 16px;
+}
+
+#riskHeatmap {
+  min-height: 560px;
+}
+
+.risk-help {
+  padding: 12px 14px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.risk-help p {
+  margin: 0;
+}
+
+@media (max-width: 1050px) {
+  .radar-section {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-plot {
+    height: 360px;
+  }
+}
+
+
+/* Patch visual: fondo blanco, radar semaforizado y heatmap columns top */
+html,
+body {
+  background: #F8F7F4 !important;
+  background-image: none !important;
+  background-attachment: initial !important;
+}
+
+body {
+  background:
+    linear-gradient(180deg, #FFFFFF 0%, #F8F7F4 100%) !important;
+}
+
+.radar-score-value {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  padding: 4px 8px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.radar-score-value.good {
+  color: #176B45;
+  background: rgba(23, 107, 69, 0.10);
+  border-color: rgba(23, 107, 69, 0.22);
+}
+
+.radar-score-value.medium {
+  color: #8A5A00;
+  background: rgba(232, 162, 74, 0.16);
+  border-color: rgba(232, 162, 74, 0.32);
+}
+
+.radar-score-value.bad {
+  color: #9E2F22;
+  background: rgba(196, 92, 58, 0.13);
+  border-color: rgba(196, 92, 58, 0.28);
+}
+
+.radar-score-value.missing {
+  color: var(--muted);
+  background: #F1F3F6;
+  border-color: var(--line);
+}
+
+.radar-score-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin: 16px 0 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.radar-score-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  border-radius: 999px;
+}
+
+.legend-dot.good {
+  background: #176B45;
+}
+
+.legend-dot.medium {
+  background: #E8A24A;
+}
+
+.legend-dot.bad {
+  background: #C45C3A;
+}
+
+/* More breathing room for labels shown above */
+#riskHeatmap {
+  min-height: 600px;
+}
+
+
+/* Patch: heatmap card full height + radar values use heatmap palette */
+
+/* Make the vulnerability card grow with the Plotly heatmap */
+.card:has(#riskHeatmap),
+.panel:has(#riskHeatmap),
+section:has(#riskHeatmap) {
+  height: auto !important;
+  min-height: 820px !important;
+  overflow: visible !important;
+}
+
+#riskHeatmap {
+  height: 680px !important;
+  min-height: 680px !important;
+  overflow: visible !important;
+}
+
+/* Make Plotly internals less likely to visually overflow their card */
+#riskHeatmap .plot-container,
+#riskHeatmap .svg-container,
+#riskHeatmap .main-svg {
+  overflow: visible !important;
+}
+
+/* Radar values: same palette as heatmap */
+.radar-score-value.good {
+  color: #2F7D68 !important;
+  background: rgba(47, 125, 104, 0.12) !important;
+  border-color: rgba(47, 125, 104, 0.28) !important;
+}
+
+.radar-score-value.medium {
+  color: #8A6A00 !important;
+  background: rgba(232, 197, 71, 0.20) !important;
+  border-color: rgba(232, 197, 71, 0.42) !important;
+}
+
+.radar-score-value.warning {
+  color: #9A4F00 !important;
+  background: rgba(232, 138, 58, 0.18) !important;
+  border-color: rgba(232, 138, 58, 0.38) !important;
+}
+
+.radar-score-value.bad {
+  color: #A12A24 !important;
+  background: rgba(196, 61, 50, 0.14) !important;
+  border-color: rgba(196, 61, 50, 0.32) !important;
+}
+
+.legend-dot.good {
+  background: #2F7D68 !important;
+}
+
+.legend-dot.medium {
+  background: #E8C547 !important;
+}
+
+.legend-dot.warning {
+  background: #E88A3A !important;
+}
+
+.legend-dot.bad {
+  background: #C43D32 !important;
+}
+
+
+/* Final visual fix: radar 3 colors + full heatmap card */
+
+/* Heatmap card: do not measure hidden tab; reserve enough space */
+.card:has(#riskHeatmap),
+.panel:has(#riskHeatmap),
+section:has(#riskHeatmap),
+.chart-card:has(#riskHeatmap) {
+  height: auto !important;
+  min-height: 910px !important;
+  overflow: visible !important;
+}
+
+#riskHeatmap {
+  height: 680px !important;
+  min-height: 680px !important;
+  overflow: visible !important;
+}
+
+#riskHeatmap .plot-container,
+#riskHeatmap .svg-container,
+#riskHeatmap .main-svg {
+  overflow: visible !important;
+}
+
+/* Radar values: force 3-color scale only */
+.radar-score-value.good {
+  color: #2F7D68 !important;
+  background: rgba(47, 125, 104, 0.14) !important;
+  border-color: rgba(47, 125, 104, 0.38) !important;
+}
+
+.radar-score-value.medium {
+  color: #8A6A00 !important;
+  background: rgba(232, 197, 71, 0.24) !important;
+  border-color: rgba(232, 197, 71, 0.50) !important;
+}
+
+.radar-score-value.bad {
+  color: #A12A24 !important;
+  background: rgba(196, 61, 50, 0.16) !important;
+  border-color: rgba(196, 61, 50, 0.40) !important;
+}
+
+.radar-score-value.warning {
+  color: #8A6A00 !important;
+  background: rgba(232, 197, 71, 0.24) !important;
+  border-color: rgba(232, 197, 71, 0.50) !important;
+}
+
+.legend-dot.good {
+  background: #2F7D68 !important;
+}
+
+.legend-dot.medium,
+.legend-dot.warning {
+  background: #E8C547 !important;
+}
+
+.legend-dot.bad {
+  background: #C43D32 !important;
+}
+
+.radar-score-legend .legend-dot.warning,
+.radar-score-legend span:has(.legend-dot.warning) {
+  display: none !important;
+}
+
+
+/* Patch visual: radar con colores más fuertes */
+.radar-score-value {
+  min-width: 52px !important;
+  padding: 6px 10px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.2px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+}
+
+/* Verde fuerte + letra blanca */
+.radar-score-value.good {
+  color: #FFFFFF !important;
+  background: #0B6E4F !important;
+  border-color: #08563E !important;
+}
+
+/* Amarillo fuerte + letra negra */
+.radar-score-value.medium {
+  color: #111111 !important;
+  background: #F2C94C !important;
+  border-color: #D4A72C !important;
+}
+
+/* Rojo fuerte + letra blanca */
+.radar-score-value.bad {
+  color: #FFFFFF !important;
+  background: #C0392B !important;
+  border-color: #962D22 !important;
+}
+
+/* Si quedó alguna clase warning vieja, la forzamos a amarillo */
+.radar-score-value.warning {
+  color: #111111 !important;
+  background: #F2C94C !important;
+  border-color: #D4A72C !important;
+}
+
+/* Missing neutral */
+.radar-score-value.missing {
+  color: #667085 !important;
+  background: #EEF2F6 !important;
+  border-color: #D0D5DD !important;
+}
+
+/* Leyenda con los mismos colores */
+.legend-dot.good {
+  background: #0B6E4F !important;
+}
+
+.legend-dot.medium,
+.legend-dot.warning {
+  background: #F2C94C !important;
+}
+
+.legend-dot.bad {
+  background: #C0392B !important;
+}

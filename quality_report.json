@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-06-03T12:46:18",
+  "total_observations": 1482,
+  "numeric_observations": 1254,
+  "text_observations": 196,
+  "missing_observations": 32,
+  "flagged_observations": 3,
+  "approx_observations": 397,
+  "estimate_observations": 646,
+  "indicators": 42,
+  "countries": 19,
+  "by_sheet": {
+    "Macro Data": {
+      "rows": 893,
+      "missing": 32
+    },
+    "External Balance & Debt": {
+      "rows": 342,
+      "missing": 0
+    },
+    "Governance & Structural": {
+      "rows": 247,
+      "missing": 0
+    }
+  },
+  "by_category": {
+    "External": {
+      "rows": 722,
+      "missing": 0
+    },
+    "Financial": {
+      "rows": 38,
+      "missing": 19
+    },
+    "Fiscal": {
+      "rows": 76,
+      "missing": 0
+    },
+    "Institutional": {
+      "rows": 247,
+      "missing": 0
+    },
+    "Monetary": {
+      "rows": 133,
+      "missing": 13
+    },
+    "Real": {
+      "rows": 266,
+      "missing": 0
+    }
+  },
+  "warning": "Este reporte valida estructura y limpieza de datos, no verifica la exactitud económica de cada fuente. Los valores marcados como approx/estimate/flagged deben revisarse antes de publicación."
+}

@@ -1,0 +1,761 @@
+{
+  "cb_indep": {
+    "indicator_id": "cb_indep",
+    "label": "CB Indep.?",
+    "category": "Monetary",
+    "unit": null,
+    "available_years": [],
+    "source": null,
+    "sheet": "Macro Data",
+    "subheaders": [],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "fx_regime": {
+    "indicator_id": "fx_regime",
+    "label": "FX Regime",
+    "category": "Monetary",
+    "unit": null,
+    "available_years": [],
+    "source": null,
+    "sheet": "Macro Data",
+    "subheaders": [],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "peg_anchor": {
+    "indicator_id": "peg_anchor",
+    "label": "Peg Anchor",
+    "category": "Monetary",
+    "unit": null,
+    "available_years": [],
+    "source": null,
+    "sheet": "Macro Data",
+    "subheaders": [],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "neer_yoy": {
+    "indicator_id": "neer_yoy",
+    "label": "NEER YoY",
+    "category": "External",
+    "unit": null,
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "BIS broad basket EER (Dec YoY). Cross-checked: MUFG FX Outlook Jan 2026; TD Economics USD 2025 report; Mexperience.com; IMF ESR July 2025. +  = appreciation. EUR-zone countries share ECB-area NEER/REER.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "end-2024",
+      "end-2025"
+    ],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "reer_yoy": {
+    "indicator_id": "reer_yoy",
+    "label": "REER YoY",
+    "category": "External",
+    "unit": null,
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "BIS broad basket EER (Dec YoY). Cross-checked: MUFG FX Outlook Jan 2026; TD Economics USD 2025 report; Mexperience.com; IMF ESR July 2025. +  = appreciation. EUR-zone countries share ECB-area NEER/REER.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "end-2024",
+      "end-2025"
+    ],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "current_acct": {
+    "indicator_id": "current_acct",
+    "label": "Current Acct",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF ESR July 2025 (2024 actuals, BPM6); IMF WEO Apr 2026 (2025e).",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "trade_balance": {
+    "indicator_id": "trade_balance",
+    "label": "Trade Balance",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "WEO Oct 2025 / Apr 2026 (NX/GDP); 2025e estimated.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "net_pri_income": {
+    "indicator_id": "net_pri_income",
+    "label": "Net Pri. Income",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "CA minus TB minus Net Current Transfers (WEO/BOP data).",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "fin_account": {
+    "indicator_id": "fin_account",
+    "label": "Fin. Account",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF ESR July 2025 (2024 actuals, BPM6); IMF WEO Apr 2026 (2025e).",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "fdi_net": {
+    "indicator_id": "fdi_net",
+    "label": "FDI net",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "BPM6 net direct investment (assets minus liabilities). IMF ESR; BOP IFS.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "portfolio_net": {
+    "indicator_id": "portfolio_net",
+    "label": "Portfolio net",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "CA minus TB minus Net Current Transfers (WEO/BOP data).",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "other_invest": {
+    "indicator_id": "other_invest",
+    "label": "Other Invest.",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF ESR July 2025; BIS IBS for cross-border banking flows.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "net_cap_flows": {
+    "indicator_id": "net_cap_flows",
+    "label": "Net Cap Flows",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "CA minus TB minus Net Current Transfers (WEO/BOP data).",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "gross_nat_saving": {
+    "indicator_id": "gross_nat_saving",
+    "label": "Gross Nat. Saving",
+    "category": "Real",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF WEO series NGSD_NGDP. 2025e = projections.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "gross_dom_invest": {
+    "indicator_id": "gross_dom_invest",
+    "label": "Gross Dom. Invest.",
+    "category": "Real",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF WEO series NID_NGDP. 2025e = projections.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "gfcf": {
+    "indicator_id": "gfcf",
+    "label": "GFCF",
+    "category": "Real",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "World Bank WDI NE.GDI.FTOT.ZS; 2025e estimated from WEO GDI trend.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "priv_consumption": {
+    "indicator_id": "priv_consumption",
+    "label": "Priv. Consumption",
+    "category": "Real",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "World Bank WDI NE.CON.PETC.ZS; 2025e estimated.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "gdp_pc": {
+    "indicator_id": "gdp_pc",
+    "label": "GDP p.c.",
+    "category": "Real",
+    "unit": "USD",
+    "available_years": [
+      "2025e"
+    ],
+    "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2025e USD"
+    ],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "gdp_growth": {
+    "indicator_id": "gdp_growth",
+    "label": "GDP Growth",
+    "category": "Real",
+    "unit": "%",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %",
+      "2025e %"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "labor_prod": {
+    "indicator_id": "labor_prod",
+    "label": "Labor Prod.",
+    "category": "Real",
+    "unit": "%",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "OECD Productivity Statistics (through 2023 for OECD members, 2024 preliminary). ILO for non-OECD.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %",
+      "2025e %"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "tfp_growth": {
+    "indicator_id": "tfp_growth",
+    "label": "TFP growth",
+    "category": "Real",
+    "unit": null,
+    "available_years": [
+      "last avail."
+    ],
+    "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "last avail."
+    ],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "inflation_cpi": {
+    "indicator_id": "inflation_cpi",
+    "label": "Inflation CPI",
+    "category": "Monetary",
+    "unit": "%",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %",
+      "2025e %"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "policy_rate": {
+    "indicator_id": "policy_rate",
+    "label": "Policy Rate",
+    "category": "Monetary",
+    "unit": "%",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "end-2024 %",
+      "end-2025 %"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "fiscal_balance": {
+    "indicator_id": "fiscal_balance",
+    "label": "Fiscal Balance",
+    "category": "Fiscal",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF Fiscal Monitor April 2026 (general government overall balance % GDP).",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "govt_gross_debt": {
+    "indicator_id": "govt_gross_debt",
+    "label": "Govt Gross Debt",
+    "category": "Fiscal",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF Fiscal Monitor April 2026 (Table A1 AEs; Table C EMs).",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "credit_privsect": {
+    "indicator_id": "credit_privsect",
+    "label": "Credit/Priv.Sect.",
+    "category": "Financial",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "Not yet published by BIS/World Bank for most countries; column left as n/a.",
+    "sheet": "Macro Data",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "niip": {
+    "indicator_id": "niip",
+    "label": "NIIP",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF IIP statistics (Balance of Payments and IIP database). 2024 actuals (most countries); 2025e estimated. All as % of GDP.",
+    "sheet": "External Balance & Debt",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "gross_ext_assets": {
+    "indicator_id": "gross_ext_assets",
+    "label": "Gross Ext. Assets",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF IIP; 2025e estimated. Note: large swings due to valuation effects from currency moves.",
+    "sheet": "External Balance & Debt",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "gross_ext_liab": {
+    "indicator_id": "gross_ext_liab",
+    "label": "Gross Ext. Liab.",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF IIP; 2025e estimated. Note: large swings due to valuation effects from currency moves.",
+    "sheet": "External Balance & Debt",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "ext_debt_total": {
+    "indicator_id": "ext_debt_total",
+    "label": "Ext. Debt (total)",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF Fiscal Monitor April 2026 (Table A1 AEs; Table C EMs).",
+    "sheet": "External Balance & Debt",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "st_ext_debt": {
+    "indicator_id": "st_ext_debt",
+    "label": "ST Ext. Debt",
+    "category": "External",
+    "unit": "% GDP",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF Fiscal Monitor April 2026 (Table A1 AEs; Table C EMs).",
+    "sheet": "External Balance & Debt",
+    "subheaders": [
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "int_reserves": {
+    "indicator_id": "int_reserves",
+    "label": "Int. Reserves",
+    "category": "External",
+    "unit": "USD bn",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF COFER/IFS. End-2024 actuals; end-2025 estimates. USD billions and % of GDP.",
+    "sheet": "External Balance & Debt",
+    "subheaders": [
+      "2024 USD bn",
+      "2025e USD bn",
+      "2024 %GDP",
+      "2025e %GDP"
+    ],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "st_debt_reserves": {
+    "indicator_id": "st_debt_reserves",
+    "label": "ST Debt/Reserves",
+    "category": "External",
+    "unit": "%",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "Short-term external debt ÷ international reserves × 100. Threshold: <100% = adequate; >150% = elevated vulnerability.",
+    "sheet": "External Balance & Debt",
+    "subheaders": [
+      "2024 %",
+      "2025e %"
+    ],
+    "numeric": true,
+    "zero_line": true,
+    "higher_is_better": "contextual"
+  },
+  "terms_of_trade": {
+    "indicator_id": "terms_of_trade",
+    "label": "Terms of Trade",
+    "category": "External",
+    "unit": "index",
+    "available_years": [
+      "2024",
+      "2025e"
+    ],
+    "source": "IMF WEO Apr 2026 (commodity-linked), index ~2016=100. Large oil exporters (Russia, Saudi Arabia) show meaningful ToT variation.",
+    "sheet": "External Balance & Debt",
+    "subheaders": [
+      "2024 index",
+      "2025e index"
+    ],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "wb_rule_of_law": {
+    "indicator_id": "wb_rule_of_law",
+    "label": "WB Rule of Law",
+    "category": "Institutional",
+    "unit": "WGI score",
+    "available_years": [
+      "2024"
+    ],
+    "source": "WGI RL.EST: confidence in rules, contract enforcement, property rights, police, courts.",
+    "sheet": "Governance & Structural",
+    "subheaders": [
+      "Estimate 2024 (−2.5 to +2.5)",
+      "Percentile rank 2024"
+    ],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "wb_govt_effectiveness": {
+    "indicator_id": "wb_govt_effectiveness",
+    "label": "WB Govt Effectiveness",
+    "category": "Institutional",
+    "unit": null,
+    "available_years": [
+      "2024"
+    ],
+    "source": "WGI GE.EST: quality of public services, bureaucracy, policy credibility.",
+    "sheet": "Governance & Structural",
+    "subheaders": [
+      "Estimate 2024"
+    ],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "wb_regulatory_quality": {
+    "indicator_id": "wb_regulatory_quality",
+    "label": "WB Regulatory Quality",
+    "category": "Institutional",
+    "unit": null,
+    "available_years": [
+      "2024"
+    ],
+    "source": "WGI RQ.EST: ability to formulate sound policies for private sector development.",
+    "sheet": "Governance & Structural",
+    "subheaders": [
+      "Estimate 2024"
+    ],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "wb_control_of_corruption": {
+    "indicator_id": "wb_control_of_corruption",
+    "label": "WB Control of Corruption",
+    "category": "Institutional",
+    "unit": null,
+    "available_years": [
+      "2024"
+    ],
+    "source": "WGI CC.EST: public power not used for private gain.",
+    "sheet": "Governance & Structural",
+    "subheaders": [
+      "Estimate 2024"
+    ],
+    "numeric": true,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "capital_controls": {
+    "indicator_id": "capital_controls",
+    "label": "Capital Controls",
+    "category": "Institutional",
+    "unit": "rating",
+    "available_years": [],
+    "source": "IMF AREAER 2024 (Annual Report on Exchange Arrangements and Exchange Restrictions). Rating scale: None / Low / Moderate / Significant / Extensive.",
+    "sheet": "Governance & Structural",
+    "subheaders": [
+      "Rating (None/Moderate/Extensive)",
+      "Description"
+    ],
+    "numeric": false,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "labor_market": {
+    "indicator_id": "labor_market",
+    "label": "Labor Market",
+    "category": "Institutional",
+    "unit": "rating",
+    "available_years": [],
+    "source": "OECD Employment Protection Legislation (EPL) database 2023; ILO ILOSTAT; national labor codes. Covers: dismissal rules, collective bargaining, social contributions, informality.",
+    "sheet": "Governance & Structural",
+    "subheaders": [
+      "Rating",
+      "Description"
+    ],
+    "numeric": false,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "industrial_policy": {
+    "indicator_id": "industrial_policy",
+    "label": "Industrial Policy",
+    "category": "Institutional",
+    "unit": "rating",
+    "available_years": [],
+    "source": "OECD PMR (Product Market Regulation) 2023; UNCTAD IIA Monitor; national investment laws. Covers: subsidies, SOEs, local content, barriers to entry.",
+    "sheet": "Governance & Structural",
+    "subheaders": [
+      "Rating",
+      "Description"
+    ],
+    "numeric": false,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  },
+  "trade_barriers": {
+    "indicator_id": "trade_barriers",
+    "label": "Trade Barriers",
+    "category": "Institutional",
+    "unit": "rating",
+    "available_years": [],
+    "source": "WTO Trade Policy Reviews 2022-2025; WTO tariff profiles 2024; OECD STRI 2023. Average MFN tariff from WTO Tariff Download Facility. Covers: tariffs, NTBs, import licensing, standards.",
+    "sheet": "Governance & Structural",
+    "subheaders": [
+      "Rating",
+      "Description"
+    ],
+    "numeric": false,
+    "zero_line": false,
+    "higher_is_better": "contextual"
+  }
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>G20 Macro Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Comparative macroeconomic, external and institutional data · 2024–2025e</p>
+        <h1>G20 Macro Dashboard</h1>
+      </div>
+      <div class="header-meta">
+        <span id="dataStatus">Loading data…</span>
+      </div>
+    </header>
+
+    <nav class="tabs" aria-label="Main sections">
+      <button class="tab is-active" data-view="compare">Comparar</button>
+      <button class="tab" data-view="country">País</button>
+      <button class="tab" data-view="relations">Relaciones</button>
+      <button class="tab" data-view="vulnerabilities">Vulnerabilidades</button>
+    </nav>
+
+    <main>
+      <section id="view-compare" class="view is-active">
+        <div class="filter-bar card">
+          <label>Categoría
+            <select id="categorySelect"></select>
+          </label>
+          <label>Indicador
+            <select id="indicatorSelect"></select>
+          </label>
+          <label>Año
+            <select id="yearSelect"></select>
+          </label>
+          <label>Orden
+            <select id="sortSelect">
+              <option value="desc">Descendente</option>
+              <option value="asc">Ascendente</option>
+            </select>
+          </label>
+          <label>Grupo
+            <select id="groupSelect">
+              <option value="All">Todos</option>
+              <option value="Advanced economy">Economías avanzadas</option>
+              <option value="Emerging economy">Economías emergentes</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="card chart-card">
+            <div class="card-head">
+              <div>
+                <h2 id="chartTitle">Comparación</h2>
+                <p id="chartSubtitle" class="muted"></p>
+              </div>
+              <button id="resetSelection" class="ghost-btn">Limpiar selección</button>
+            </div>
+            <div id="barChart" class="plot"></div>
+            <div id="sourceNote" class="source-note"></div>
+          </section>
+
+          <aside id="sidePanel" class="card side-panel">
+            <p class="eyebrow">Country risks</p>
+            <h2 id="sideCountry">Selecciona un país</h2>
+            <p id="sideGroup" class="muted">Haz clic en una barra para ver su perfil compacto.</p>
+            <div id="riskBadges" class="risk-badges"></div>
+            <div id="countrySnapshot" class="snapshot"></div>
+            <button id="openCountryView" class="primary-btn" disabled>Abrir perfil completo</button>
+          </aside>
+        </div>
+      </section>
+
+      <section id="view-country" class="view">
+        <div class="country-layout">
+          <section class="card">
+            <div class="card-head">
+              <div>
+                <p class="eyebrow">País</p>
+                <h2>Perfil completo</h2>
+              </div>
+              <label class="compact-label">País
+                <select id="countrySelect"></select>
+              </label>
+            </div>
+            <div id="countryHeader" class="country-header"></div>
+            <div id="countryTables" class="country-tables"></div>
+          </section>
+        </div>
+      </section>
+
+      <section id="view-relations" class="view">
+        <div class="filter-bar card">
+          <label>Eje X
+            <select id="xIndicatorSelect"></select>
+          </label>
+          <label>Eje Y
+            <select id="yIndicatorSelect"></select>
+          </label>
+          <label>Año
+            <select id="scatterYearSelect">
+              <option value="2025e">2025e</option>
+              <option value="2024">2024</option>
+            </select>
+          </label>
+          <label>Atajo
+            <select id="presetSelect"></select>
+          </label>
+        </div>
+        <section class="card chart-card full-width">
+          <div class="card-head">
+            <div>
+              <h2 id="scatterTitle">Relaciones entre indicadores</h2>
+              <p class="muted">Cada punto es un país. Color por tipo de economía.</p>
+            </div>
+          </div>
+          <div id="scatterPlot" class="plot tall"></div>
+        </section>
+      </section>
+
+      <section id="view-vulnerabilities" class="view">
+        <div class="vulnerability-grid">
+          <section class="card chart-card">
+            <div class="card-head">
+              <div>
+                <p class="eyebrow">Diagnóstico</p>
+                <h2>Heatmap de vulnerabilidades por indicador</h2>
+              </div>
+            </div>
+            <p class="muted heatmap-note">Columnas = indicadores concretos. Filas = países. El color marca presión baja, media o alta según umbrales transparentes.</p>
+            <div id="riskHeatmap" class="plot tall"></div>
+          </section>
+          <aside class="card side-panel">
+            <p class="eyebrow">Señales rápidas</p>
+            <h2>Alertas por país</h2>
+            <div id="riskSignals" class="risk-list"></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

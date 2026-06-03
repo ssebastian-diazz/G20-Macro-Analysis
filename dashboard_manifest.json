@@ -1,0 +1,33 @@
+{
+  "project": "G20 Macro Dashboard",
+  "input_file": "d.xlsx",
+  "generated_at": "2026-06-03T12:46:18",
+  "files": {
+    "long_data": "g20_long.json",
+    "country_profiles": "country_profiles.json",
+    "indicators_catalog": "indicators_catalog.json",
+    "vulnerability_scores": "vulnerability_scores.json",
+    "quality_report": "quality_report.json"
+  },
+  "navigation": [
+    "Comparar",
+    "País",
+    "Relaciones",
+    "Vulnerabilidades"
+  ],
+  "categories": [
+    "External",
+    "Financial",
+    "Fiscal",
+    "Institutional",
+    "Monetary",
+    "Real"
+  ],
+  "default_view": {
+    "section": "Comparar",
+    "category": "External",
+    "indicator_id": "current_acct",
+    "year": "2025e",
+    "sort": "desc"
+  }
+}
