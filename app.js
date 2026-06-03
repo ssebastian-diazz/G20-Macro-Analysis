@@ -138,11 +138,11 @@ const $ = (id) => document.getElementById(id);
 
 async function loadData() {
   const [rows, profiles, catalog, risks, manifest] = await Promise.all([
-    fetch('data/g20_long.json').then(r => r.json()),
-    fetch('data/country_profiles.json').then(r => r.json()),
-    fetch('data/indicators_catalog.json').then(r => r.json()),
-    fetch('data/vulnerability_scores.json').then(r => r.json()),
-    fetch('data/dashboard_manifest.json').then(r => r.json()).catch(() => null),
+    fetch('./g20_long.json').then(r => r.json()),
+    fetch('./country_profiles.json').then(r => r.json()),
+    fetch('./indicators_catalog.json').then(r => r.json()),
+    fetch('./vulnerability_scores.json').then(r => r.json()),
+    fetch('./dashboard_manifest.json').then(r => r.json()).catch(() => null),
   ]);
   state.rows = rows;
   state.profiles = profiles;
