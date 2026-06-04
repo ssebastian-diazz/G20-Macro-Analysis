@@ -138,11 +138,11 @@ const $ = (id) => document.getElementById(id);
 
 async function loadData() {
   const [rows, profiles, catalog, risks, manifest] = await Promise.all([
-    fetch('./g20_long.json').then(r => r.json()),
-    fetch('./country_profiles.json').then(r => r.json()),
-    fetch('./indicators_catalog.json').then(r => r.json()),
-    fetch('./vulnerability_scores.json').then(r => r.json()),
-    fetch('./dashboard_manifest.json').then(r => r.json()).catch(() => null),
+    fetch('data/g20_long.json').then(r => r.json()),
+    fetch('data/country_profiles.json').then(r => r.json()),
+    fetch('data/indicators_catalog.json').then(r => r.json()),
+    fetch('data/vulnerability_scores.json').then(r => r.json()),
+    fetch('data/dashboard_manifest.json').then(r => r.json()).catch(() => null),
   ]);
   state.rows = rows;
   state.profiles = profiles;
@@ -339,7 +339,7 @@ function formatValue(value, unit) {
 
 function riskFor(country) { return state.risks.find(r => r.country === country); }
 function renderRiskBadges(country, containerId) {
-  const risk = riskFor(country);
+  const risk = compositeRiskFromRadar(country);
   if (!risk) { $(containerId).innerHTML = ''; return; }
   const badges = [
     ['External', risk.external_risk], ['Fiscal', risk.fiscal_risk], ['Monetary', risk.monetary_risk]
@@ -351,6 +351,65 @@ function dots(level) {
   return `<div class="dots">${[1,2,3].map(i => `<span class="dot ${i <= n ? `on ${level}` : ''}"></span>`).join('')}</div>`;
 }
 
+
+function compositeRiskFromRadar(country) {
+  const dims = radarScoresFor(country);
+
+  const weights = {
+    external_position: 0.25,
+    fiscal_solidity: 0.25,
+    monetary_stability: 0.20,
+    real_performance: 0.15,
+    institutional_quality: 0.15,
+  };
+
+  let total = 0;
+  let usedWeight = 0;
+
+  dims.forEach(dim => {
+    if (dim.score === null || dim.score === undefined || Number.isNaN(Number(dim.score))) return;
+
+    const weight = weights[dim.id] || 0;
+    total += Number(dim.score) * weight;
+    usedWeight += weight;
+  });
+
+  if (!usedWeight) {
+    return {
+      score: null,
+      label: 'n/a'
+    };
+  }
+
+  const score = total / usedWeight;
+
+  let label = 'high';
+
+  if (score >= 70) {
+    label = 'low';
+  } else if (score >= 45) {
+    label = 'medium';
+  }
+
+  return {
+    score: Math.round(score),
+    label
+  };
+}
+
+function riskLabelDisplay(risk) {
+  if (!risk || risk.label === 'n/a') return 'n/a';
+
+  const label = risk.label === 'low'
+    ? 'low'
+    : risk.label === 'medium'
+      ? 'medium'
+      : 'high';
+
+  return `${label} (${risk.score}/100)`;
+}
+
+
 function renderCountryView() {
   const country = state.selectedCountry || $('countrySelect').value;
   if (!country) return;
@@ -358,11 +417,11 @@ function renderCountryView() {
   const profile = state.profiles[country];
   $('countrySelect').value = country;
 
-  const risk = riskFor(country);
+  const risk = compositeRiskFromRadar(country);
 
   $('countryHeader').innerHTML = [
     kpi('Group', profile.country_group || '—'),
-    kpi('Overall risk', risk?.overall_risk || '—'),
+    kpi('Overall risk', riskLabelDisplay(risk)),
     kpi('Inflation 2025e', displayMetric(getBestValue(profile, 'inflation_cpi', ['2025e']))),
     kpi('GDP growth 2025e', displayMetric(getBestValue(profile, 'gdp_growth', ['2025e']))),
   ].join('');
