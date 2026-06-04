@@ -399,14 +399,7 @@ function compositeRiskFromRadar(country) {
 
 function riskLabelDisplay(risk) {
   if (!risk || risk.label === 'n/a') return 'n/a';
-
-  const label = risk.label === 'low'
-    ? 'low'
-    : risk.label === 'medium'
-      ? 'medium'
-      : 'high';
-
-  return `${label} (${risk.score}/100)`;
+  return risk.label;
 }
 
 
