@@ -378,14 +378,14 @@
   },
   "inflation_cpi": {
     "indicator_id": "inflation_cpi",
-    "label": "Inflation CPI",
+    "label": "CPI inflation, latest YoY",
     "category": "Monetary",
     "unit": "%",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections.",
+    "source": "Trading Economics — Inflation Rate country list",
     "sheet": "Macro Data",
     "subheaders": [
       "2024 %",
@@ -393,18 +393,23 @@
     ],
     "numeric": true,
     "zero_line": true,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+    "confidence": "medium-high",
+    "status": "audited_latest",
+    "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+    "display_year_2025e": "latest"
   },
   "policy_rate": {
     "indicator_id": "policy_rate",
-    "label": "Policy Rate",
+    "label": "Policy rate, latest",
     "category": "Monetary",
     "unit": "%",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate.",
+    "source": "Trading Economics — Interest Rate country list",
     "sheet": "Macro Data",
     "subheaders": [
       "end-2024 %",
@@ -412,7 +417,12 @@
     ],
     "numeric": true,
     "zero_line": true,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+    "confidence": "medium-high",
+    "status": "audited_latest",
+    "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+    "display_year_2025e": "latest"
   },
   "fiscal_balance": {
     "indicator_id": "fiscal_balance",
