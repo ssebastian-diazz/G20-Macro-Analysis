@@ -662,12 +662,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 50.0,
+            "value": 32.4,
             "text_value": null,
-            "raw": "~50",
+            "raw": "32.4",
             "approx": true,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -701,10 +702,11 @@
             "unit": "%",
             "value": 29.0,
             "text_value": null,
-            "raw": "29.0",
+            "raw": "29",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -2328,12 +2330,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 2.5,
+            "value": 4.2,
             "text_value": null,
-            "raw": "2.5",
+            "raw": "4.2",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -2365,12 +2368,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 3.85,
+            "value": 4.35,
             "text_value": null,
-            "raw": "3.85",
+            "raw": "4.35",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -3994,12 +3998,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 5.1,
+            "value": 4.39,
             "text_value": null,
-            "raw": "5.1",
+            "raw": "4.39",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -4031,12 +4036,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 13.75,
+            "value": 14.5,
             "text_value": null,
-            "raw": "13.75",
+            "raw": "14.5",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -5660,12 +5666,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 2.4,
+            "value": 2.8,
             "text_value": null,
-            "raw": "2.4",
+            "raw": "2.8",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -5697,12 +5704,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 2.75,
+            "value": 2.25,
             "text_value": null,
-            "raw": "2.75",
+            "raw": "2.25",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -7326,12 +7334,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 0.2,
+            "value": 1.2,
             "text_value": null,
-            "raw": "0.2",
+            "raw": "1.2",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -7365,10 +7374,11 @@
             "unit": "%",
             "value": 3.0,
             "text_value": null,
-            "raw": "3.00",
+            "raw": "3",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -8992,12 +9002,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 1.6,
+            "value": 2.4,
             "text_value": null,
-            "raw": "1.6",
+            "raw": "2.4",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -9029,12 +9040,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 2.65,
+            "value": 2.15,
             "text_value": null,
-            "raw": "2.65",
+            "raw": "2.15",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -10658,12 +10670,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 2.1,
+            "value": 2.6,
             "text_value": null,
-            "raw": "2.1",
+            "raw": "2.6",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -10695,12 +10708,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 2.65,
+            "value": 2.15,
             "text_value": null,
-            "raw": "2.65",
+            "raw": "2.15",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -12324,12 +12338,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 3.7,
+            "value": 3.48,
             "text_value": null,
-            "raw": "3.7",
+            "raw": "3.48",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -12361,12 +12376,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 5.75,
+            "value": 5.25,
             "text_value": null,
-            "raw": "5.75",
+            "raw": "5.25",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -13990,12 +14006,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 2.4,
+            "value": 3.08,
             "text_value": null,
-            "raw": "2.4",
+            "raw": "3.08",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -14027,12 +14044,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 5.75,
+            "value": 5.25,
             "text_value": null,
-            "raw": "5.75",
+            "raw": "5.25",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -15656,12 +15674,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 1.5,
+            "value": 3.2,
             "text_value": null,
-            "raw": "1.5",
+            "raw": "3.2",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -15693,12 +15712,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 2.65,
+            "value": 2.15,
             "text_value": null,
-            "raw": "2.65",
+            "raw": "2.15",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -17322,12 +17342,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 3.3,
+            "value": 1.4,
             "text_value": null,
-            "raw": "3.3",
+            "raw": "1.4",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -17359,12 +17380,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 0.5,
+            "value": 0.75,
             "text_value": null,
-            "raw": "0.50",
+            "raw": "0.75",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -18988,12 +19010,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 1.8,
+            "value": 3.1,
             "text_value": null,
-            "raw": "1.8",
+            "raw": "3.1",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -19025,12 +19048,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 2.75,
+            "value": 2.5,
             "text_value": null,
-            "raw": "2.75",
+            "raw": "2.5",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -20654,12 +20678,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 3.9,
+            "value": 4.45,
             "text_value": null,
-            "raw": "3.9",
+            "raw": "4.45",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -20691,12 +20716,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 8.5,
+            "value": 6.5,
             "text_value": null,
-            "raw": "8.50",
+            "raw": "6.5",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -22320,12 +22346,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 7.0,
+            "value": 5.6,
             "text_value": null,
-            "raw": "7.0",
+            "raw": "5.6",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -22357,12 +22384,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 21.0,
+            "value": 14.5,
             "text_value": null,
-            "raw": "21.00",
+            "raw": "14.5",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -23986,12 +24014,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 2.0,
+            "value": 1.7,
             "text_value": null,
-            "raw": "2.0",
+            "raw": "1.7",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -24023,12 +24052,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 5.25,
+            "value": 4.25,
             "text_value": null,
-            "raw": "5.25",
+            "raw": "4.25",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -25652,12 +25682,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 3.8,
+            "value": 4.0,
             "text_value": null,
-            "raw": "3.8",
+            "raw": "4",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -25689,12 +25720,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 7.25,
+            "value": 7.0,
             "text_value": null,
-            "raw": "7.25",
+            "raw": "7",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -27318,12 +27350,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 31.0,
+            "value": 32.61,
             "text_value": null,
-            "raw": "31.0",
+            "raw": "32.61",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -27355,12 +27388,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 42.5,
+            "value": 37.0,
             "text_value": null,
-            "raw": "42.50",
+            "raw": "37",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -28984,12 +29018,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 2.7,
+            "value": 2.8,
             "text_value": null,
-            "raw": "2.7",
+            "raw": "2.8",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -29026,7 +29061,8 @@
             "raw": "3.75",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
@@ -30650,12 +30686,13 @@
             "label": "Inflation CPI",
             "year": "2025e",
             "unit": "%",
-            "value": 3.0,
+            "value": 3.8,
             "text_value": null,
-            "raw": "3.0",
+            "raw": "3.8",
             "approx": false,
             "estimate": true,
-            "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+            "source": "Trading Economics — Inflation Rate country list",
+            "audited": true
           }
         },
         "peg_anchor": {
@@ -30687,12 +30724,13 @@
             "label": "Policy Rate",
             "year": "2025e",
             "unit": "%",
-            "value": 4.375,
+            "value": 3.75,
             "text_value": null,
-            "raw": "4.375",
+            "raw": "3.75",
             "approx": false,
             "estimate": true,
-            "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+            "source": "Trading Economics — Interest Rate country list",
+            "audited": true
           }
         }
       },
