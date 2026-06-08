@@ -126,7 +126,7 @@ const VULNERABILITY_INDICATORS = [
 
 
 const SCATTER_PRESETS = [
-  { label: 'Inflación vs. tasa de política', x: 'inflation_cpi', y: 'policy_rate' },
+  { label: 'Latest CPI vs. policy rate', x: 'inflation_cpi', y: 'policy_rate' },
   { label: 'Cuenta corriente vs. REER', x: 'current_acct', y: 'reer_yoy' },
   { label: 'Deuda pública vs. balance fiscal', x: 'govt_gross_debt', y: 'fiscal_balance' },
   { label: 'PIB per cápita vs. crecimiento', x: 'gdp_pc', y: 'gdp_growth' },
@@ -204,6 +204,19 @@ function labelCategory(c) {
   return ({External: 'Externo', Fiscal: 'Fiscal', Monetary: 'Monetario', Real: 'Real', Financial: 'Financiero', Institutional: 'Institucional'}[c] || c);
 }
 
+function displayYearLabel(year, indicatorId = null) {
+  if (year === '2025e' && ['inflation_cpi', 'policy_rate'].includes(indicatorId)) {
+    return 'Latest';
+  }
+  return year;
+}
+
+function displayIndicatorLabel(indicatorId, fallbackLabel = null) {
+  if (indicatorId === 'inflation_cpi') return 'CPI inflation, latest YoY';
+  if (indicatorId === 'policy_rate') return 'Policy rate, latest';
+  return fallbackLabel || indicatorId;
+}
+
 function numericIndicators(category = null) {
   return Object.values(state.catalog)
     .filter(d => d.numeric && (category ? d.category === category : true) && availableRowsForIndicator(d.indicator_id).length)
@@ -217,7 +230,7 @@ function availableRowsForIndicator(indicatorId) {
 function populateIndicatorSelect() {
   const category = $('categorySelect').value;
   const opts = numericIndicators(category);
-  $('indicatorSelect').innerHTML = opts.map(d => `<option value="${d.indicator_id}">${d.label}</option>`).join('');
+  $('indicatorSelect').innerHTML = opts.map(d => `<option value="${d.indicator_id}">${displayIndicatorLabel(d.indicator_id, d.label)}</option>`).join('');
   if (!opts.find(d => d.indicator_id === $('indicatorSelect').value)) $('indicatorSelect').value = opts[0]?.indicator_id || '';
 }
 
@@ -225,7 +238,8 @@ function populateYearSelect() {
   const indicator = $('indicatorSelect').value;
   const years = [...new Set(state.rows.filter(r => r.indicator_id === indicator && r.value !== null).map(r => r.year))];
   const ordered = ['2025e', '2024', 'last avail.', 'static'].filter(y => years.includes(y)).concat(years.filter(y => !['2025e','2024','last avail.','static'].includes(y)));
-  $('yearSelect').innerHTML = ordered.map(y => `<option value="${y}">${y}</option>`).join('');
+  const currentIndicator = $('indicatorSelect').value;
+  $('yearSelect').innerHTML = ordered.map(y => `<option value="${y}">${displayYearLabel(y, currentIndicator)}</option>`).join('');
   $('yearSelect').value = ordered.includes(DEFAULTS.year) ? DEFAULTS.year : ordered[0];
 }
 
@@ -244,7 +258,7 @@ function renderCompare() {
   const rows = filteredCompareRows();
   const indicatorId = $('indicatorSelect').value;
   const meta = state.catalog[indicatorId] || {};
-  $('chartTitle').textContent = `${meta.label || indicatorId} · ${$('yearSelect').value}`;
+  $('chartTitle').textContent = `${displayIndicatorLabel(indicatorId, meta.label)} · ${displayYearLabel($('yearSelect').value, indicatorId)}`;
   $('chartSubtitle').textContent = `${labelCategory(meta.category)}${meta.unit ? ` · ${meta.unit}` : ''}`;
   $('sourceNote').textContent = meta.source ? `Fuente / nota: ${meta.source}` : 'Sin fuente registrada para este indicador.';
 
@@ -317,7 +331,7 @@ function metricRow(profile, indicatorId) {
   const meta = state.catalog[indicatorId] || {};
   const value = getBestValue(profile, indicatorId);
   if (!value) return null;
-  return `<div class="metric-row"><span>${meta.label || indicatorId}</span><span class="metric-value">${displayMetric(value)}</span></div>`;
+  return `<div class="metric-row"><span>${displayIndicatorLabel(indicatorId, meta.label)}</span><span class="metric-value">${displayMetric(value)}</span></div>`;
 }
 
 function getBestValue(profile, indicatorId, preferredYears = ['2025e', '2024', 'last avail.', 'static']) {
@@ -415,7 +429,7 @@ function renderCountryView() {
   $('countryHeader').innerHTML = [
     kpi('Group', profile.country_group || '—'),
     kpi('Overall risk', riskLabelDisplay(risk)),
-    kpi('Inflation 2025e', displayMetric(getBestValue(profile, 'inflation_cpi', ['2025e']))),
+    kpi('Latest CPI', displayMetric(getBestValue(profile, 'inflation_cpi', ['2025e']))),
     kpi('GDP growth 2025e', displayMetric(getBestValue(profile, 'gdp_growth', ['2025e']))),
   ].join('');
 
@@ -437,9 +451,9 @@ function countryCategoryTable(profile, category) {
     const v2024 = values['2024'] ? displayMetric(values['2024']) : '—';
     const v2025 = values['2025e'] ? displayMetric(values['2025e']) : '—';
     const vlast = values['last avail.'] ? displayMetric(values['last avail.']) : (values['static'] ? displayMetric(values['static']) : '—');
-    return `<tr><td>${meta.label || id}</td><td class="value">${v2024}</td><td class="value">${v2025}</td><td class="value">${vlast}</td></tr>`;
+    return `<tr><td>${displayIndicatorLabel(id, meta.label)}</td><td class="value">${v2024}</td><td class="value">${v2025}</td><td class="value">${vlast}</td></tr>`;
   }).join('');
-  return `<details open><summary>${labelCategory(category)}</summary><table><thead><tr><th>Indicador</th><th>2024</th><th>2025e</th><th>Otro</th></tr></thead><tbody>${rows}</tbody></table></details>`;
+  return `<details open><summary>${labelCategory(category)}</summary><table><thead><tr><th>Indicador</th><th>2024</th><th>Latest / 2025e</th><th>Otro</th></tr></thead><tbody>${rows}</tbody></table></details>`;
 }
 
 
@@ -666,7 +680,7 @@ function vulnerabilityCell(country, cfg) {
 
 function initScatterControls() {
   const opts = numericIndicators().filter(d => ['2024','2025e'].some(y => d.available_years?.includes(y)));
-  const html = opts.map(d => `<option value="${d.indicator_id}">${d.label} · ${labelCategory(d.category)}</option>`).join('');
+  const html = opts.map(d => `<option value="${d.indicator_id}">${displayIndicatorLabel(d.indicator_id, d.label)} · ${labelCategory(d.category)}</option>`).join('');
   $('xIndicatorSelect').innerHTML = html;
   $('yIndicatorSelect').innerHTML = html;
   $('xIndicatorSelect').value = 'inflation_cpi';
@@ -700,13 +714,13 @@ function renderScatter() {
     };
   });
   const xMeta = state.catalog[xId] || {}, yMeta = state.catalog[yId] || {};
-  $('scatterTitle').textContent = `${xMeta.label} vs. ${yMeta.label} · ${year}`;
+  $('scatterTitle').textContent = `${displayIndicatorLabel(xId, xMeta.label)} vs. ${displayIndicatorLabel(yId, yMeta.label)} · ${displayYearLabel(year, xId)}`;
   Plotly.react('scatterPlot', tracesByGroup, {
     margin: { l: 72, r: 28, t: 20, b: 68 },
     paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)',
     font: { family: 'IBM Plex Sans', color: '#1A1A2E' },
-    xaxis: { title: `${xMeta.label}${xMeta.unit ? ` (${xMeta.unit})` : ''}`, gridcolor: '#E2E4E8', zerolinecolor: '#1A1A2E' },
-    yaxis: { title: `${yMeta.label}${yMeta.unit ? ` (${yMeta.unit})` : ''}`, gridcolor: '#E2E4E8', zerolinecolor: '#1A1A2E' },
+    xaxis: { title: `${displayIndicatorLabel(xId, xMeta.label)}${xMeta.unit ? ` (${xMeta.unit})` : ''}`, gridcolor: '#E2E4E8', zerolinecolor: '#1A1A2E' },
+    yaxis: { title: `${displayIndicatorLabel(yId, yMeta.label)}${yMeta.unit ? ` (${yMeta.unit})` : ''}`, gridcolor: '#E2E4E8', zerolinecolor: '#1A1A2E' },
     legend: { orientation: 'h', y: 1.08 },
   }, { responsive: true, displayModeBar: false });
 }
