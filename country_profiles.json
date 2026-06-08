@@ -666,9 +666,15 @@
             "text_value": null,
             "raw": "32.4",
             "approx": true,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Argentina",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -704,9 +710,15 @@
             "text_value": null,
             "raw": "29",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Argentina",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -1468,15 +1480,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Argentina",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 32.4,
+        "raw": "32.4",
         "unit": "%",
-        "value": 50.0,
-        "text_value": null,
-        "raw": "~50",
-        "approx": true,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -1501,15 +1517,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Argentina",
+        "indicator_id": "policy_rate",
         "year": "2025e",
-        "unit": "%",
         "value": 29.0,
-        "text_value": null,
-        "raw": "29.0",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "raw": "29",
+        "unit": "%",
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -2334,9 +2354,15 @@
             "text_value": null,
             "raw": "4.2",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Australia",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -2372,9 +2398,15 @@
             "text_value": null,
             "raw": "4.35",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Australia",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -3136,15 +3168,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Australia",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 4.2,
+        "raw": "4.2",
         "unit": "%",
-        "value": 2.5,
-        "text_value": null,
-        "raw": "2.5",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -3169,15 +3205,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Australia",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 4.35,
+        "raw": "4.35",
         "unit": "%",
-        "value": 3.85,
-        "text_value": null,
-        "raw": "3.85",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -4002,9 +4042,15 @@
             "text_value": null,
             "raw": "4.39",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Brazil",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -4040,9 +4086,15 @@
             "text_value": null,
             "raw": "14.5",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Brazil",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -4804,15 +4856,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Brazil",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 4.39,
+        "raw": "4.39",
         "unit": "%",
-        "value": 5.1,
-        "text_value": null,
-        "raw": "5.1",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -4837,15 +4893,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Brazil",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 14.5,
+        "raw": "14.5",
         "unit": "%",
-        "value": 13.75,
-        "text_value": null,
-        "raw": "13.75",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -5670,9 +5730,15 @@
             "text_value": null,
             "raw": "2.8",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Canada",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -5708,9 +5774,15 @@
             "text_value": null,
             "raw": "2.25",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Canada",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -6472,15 +6544,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Canada",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 2.8,
+        "raw": "2.8",
         "unit": "%",
-        "value": 2.4,
-        "text_value": null,
-        "raw": "2.4",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -6505,15 +6581,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Canada",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 2.25,
+        "raw": "2.25",
         "unit": "%",
-        "value": 2.75,
-        "text_value": null,
-        "raw": "2.75",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -7338,9 +7418,15 @@
             "text_value": null,
             "raw": "1.2",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "China",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -7376,9 +7462,15 @@
             "text_value": null,
             "raw": "3",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "China",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -8140,15 +8232,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "China",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 1.2,
+        "raw": "1.2",
         "unit": "%",
-        "value": 0.2,
-        "text_value": null,
-        "raw": "0.2",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -8173,15 +8269,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "China",
+        "indicator_id": "policy_rate",
         "year": "2025e",
-        "unit": "%",
         "value": 3.0,
-        "text_value": null,
-        "raw": "3.00",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "raw": "3",
+        "unit": "%",
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -9006,9 +9106,15 @@
             "text_value": null,
             "raw": "2.4",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "France",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -9044,9 +9150,15 @@
             "text_value": null,
             "raw": "2.15",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "France",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -9808,15 +9920,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "France",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 2.4,
+        "raw": "2.4",
         "unit": "%",
-        "value": 1.6,
-        "text_value": null,
-        "raw": "1.6",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -9841,15 +9957,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "France",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 2.15,
+        "raw": "2.15",
         "unit": "%",
-        "value": 2.65,
-        "text_value": null,
-        "raw": "2.65",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -10674,9 +10794,15 @@
             "text_value": null,
             "raw": "2.6",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Germany",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -10712,9 +10838,15 @@
             "text_value": null,
             "raw": "2.15",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Germany",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -11476,15 +11608,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Germany",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 2.6,
+        "raw": "2.6",
         "unit": "%",
-        "value": 2.1,
-        "text_value": null,
-        "raw": "2.1",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -11509,15 +11645,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Germany",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 2.15,
+        "raw": "2.15",
         "unit": "%",
-        "value": 2.65,
-        "text_value": null,
-        "raw": "2.65",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -12342,9 +12482,15 @@
             "text_value": null,
             "raw": "3.48",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "India",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -12380,9 +12526,15 @@
             "text_value": null,
             "raw": "5.25",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "India",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -13144,15 +13296,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "India",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 3.48,
+        "raw": "3.48",
         "unit": "%",
-        "value": 3.7,
-        "text_value": null,
-        "raw": "3.7",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -13177,15 +13333,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "India",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 5.25,
+        "raw": "5.25",
         "unit": "%",
-        "value": 5.75,
-        "text_value": null,
-        "raw": "5.75",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -14010,9 +14170,15 @@
             "text_value": null,
             "raw": "3.08",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Indonesia",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -14048,9 +14214,15 @@
             "text_value": null,
             "raw": "5.25",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Indonesia",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -14812,15 +14984,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Indonesia",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 3.08,
+        "raw": "3.08",
         "unit": "%",
-        "value": 2.4,
-        "text_value": null,
-        "raw": "2.4",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -14845,15 +15021,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Indonesia",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 5.25,
+        "raw": "5.25",
         "unit": "%",
-        "value": 5.75,
-        "text_value": null,
-        "raw": "5.75",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -15678,9 +15858,15 @@
             "text_value": null,
             "raw": "3.2",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Italy",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -15716,9 +15902,15 @@
             "text_value": null,
             "raw": "2.15",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Italy",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -16480,15 +16672,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Italy",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 3.2,
+        "raw": "3.2",
         "unit": "%",
-        "value": 1.5,
-        "text_value": null,
-        "raw": "1.5",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -16513,15 +16709,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Italy",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 2.15,
+        "raw": "2.15",
         "unit": "%",
-        "value": 2.65,
-        "text_value": null,
-        "raw": "2.65",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -17346,9 +17546,15 @@
             "text_value": null,
             "raw": "1.4",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Japan",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -17384,9 +17590,15 @@
             "text_value": null,
             "raw": "0.75",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Japan",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -18148,15 +18360,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Japan",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 1.4,
+        "raw": "1.4",
         "unit": "%",
-        "value": 3.3,
-        "text_value": null,
-        "raw": "3.3",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -18181,15 +18397,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Japan",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 0.75,
+        "raw": "0.75",
         "unit": "%",
-        "value": 0.5,
-        "text_value": null,
-        "raw": "0.50",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -19014,9 +19234,15 @@
             "text_value": null,
             "raw": "3.1",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Korea, Rep.",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -19052,9 +19278,15 @@
             "text_value": null,
             "raw": "2.5",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Korea, Rep.",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -19816,15 +20048,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Korea, Rep.",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 3.1,
+        "raw": "3.1",
         "unit": "%",
-        "value": 1.8,
-        "text_value": null,
-        "raw": "1.8",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -19849,15 +20085,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Korea, Rep.",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 2.5,
+        "raw": "2.5",
         "unit": "%",
-        "value": 2.75,
-        "text_value": null,
-        "raw": "2.75",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -20682,9 +20922,15 @@
             "text_value": null,
             "raw": "4.45",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Mexico",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -20720,9 +20966,15 @@
             "text_value": null,
             "raw": "6.5",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Mexico",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -21484,15 +21736,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Mexico",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 4.45,
+        "raw": "4.45",
         "unit": "%",
-        "value": 3.9,
-        "text_value": null,
-        "raw": "3.9",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -21517,15 +21773,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Mexico",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 6.5,
+        "raw": "6.5",
         "unit": "%",
-        "value": 8.5,
-        "text_value": null,
-        "raw": "8.50",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -22350,9 +22610,15 @@
             "text_value": null,
             "raw": "5.6",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Russia",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -22388,9 +22654,15 @@
             "text_value": null,
             "raw": "14.5",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Russia",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -23152,15 +23424,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Russia",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 5.6,
+        "raw": "5.6",
         "unit": "%",
-        "value": 7.0,
-        "text_value": null,
-        "raw": "7.0",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -23185,15 +23461,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Russia",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 14.5,
+        "raw": "14.5",
         "unit": "%",
-        "value": 21.0,
-        "text_value": null,
-        "raw": "21.00",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -24018,9 +24298,15 @@
             "text_value": null,
             "raw": "1.7",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Saudi Arabia",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -24056,9 +24342,15 @@
             "text_value": null,
             "raw": "4.25",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Saudi Arabia",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -24820,15 +25112,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Saudi Arabia",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 1.7,
+        "raw": "1.7",
         "unit": "%",
-        "value": 2.0,
-        "text_value": null,
-        "raw": "2.0",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -24853,15 +25149,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Saudi Arabia",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 4.25,
+        "raw": "4.25",
         "unit": "%",
-        "value": 5.25,
-        "text_value": null,
-        "raw": "5.25",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -25686,9 +25986,15 @@
             "text_value": null,
             "raw": "4",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "South Africa",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -25724,9 +26030,15 @@
             "text_value": null,
             "raw": "7",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "South Africa",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -26488,15 +26800,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "South Africa",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 4.0,
+        "raw": "4",
         "unit": "%",
-        "value": 3.8,
-        "text_value": null,
-        "raw": "3.8",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -26521,15 +26837,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "South Africa",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 7.0,
+        "raw": "7",
         "unit": "%",
-        "value": 7.25,
-        "text_value": null,
-        "raw": "7.25",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -27354,9 +27674,15 @@
             "text_value": null,
             "raw": "32.61",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Türkiye",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -27392,9 +27718,15 @@
             "text_value": null,
             "raw": "37",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "Türkiye",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -28156,15 +28488,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "Türkiye",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 32.61,
+        "raw": "32.61",
         "unit": "%",
-        "value": 31.0,
-        "text_value": null,
-        "raw": "31.0",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -28189,15 +28525,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "Türkiye",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 37.0,
+        "raw": "37",
         "unit": "%",
-        "value": 42.5,
-        "text_value": null,
-        "raw": "42.50",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -29022,9 +29362,15 @@
             "text_value": null,
             "raw": "2.8",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "United Kingdom",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -29060,9 +29406,15 @@
             "text_value": null,
             "raw": "3.75",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "United Kingdom",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -29824,15 +30176,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "United Kingdom",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 2.8,
+        "raw": "2.8",
         "unit": "%",
-        "value": 2.7,
-        "text_value": null,
-        "raw": "2.7",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -29857,15 +30213,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "United Kingdom",
+        "indicator_id": "policy_rate",
         "year": "2025e",
-        "unit": "%",
         "value": 3.75,
-        "text_value": null,
         "raw": "3.75",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "unit": "%",
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
@@ -30690,9 +31050,15 @@
             "text_value": null,
             "raw": "3.8",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Inflation Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "United States",
+            "indicator_id": "inflation_cpi",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+            "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+            "display_year": "latest"
           }
         },
         "peg_anchor": {
@@ -30728,9 +31094,15 @@
             "text_value": null,
             "raw": "3.75",
             "approx": false,
-            "estimate": true,
+            "estimate": false,
             "source": "Trading Economics — Interest Rate country list",
-            "audited": true
+            "audited": true,
+            "country": "United States",
+            "indicator_id": "policy_rate",
+            "missing": false,
+            "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+            "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+            "display_year": "latest"
           }
         }
       },
@@ -31492,15 +31864,19 @@
         "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
       },
       "inflation_cpi__2025e": {
-        "label": "Inflation CPI",
+        "country": "United States",
+        "indicator_id": "inflation_cpi",
         "year": "2025e",
+        "value": 3.8,
+        "raw": "3.8",
         "unit": "%",
-        "value": 3.0,
-        "text_value": null,
-        "raw": "3.0",
-        "approx": false,
-        "estimate": true,
-        "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Inflation Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/inflation-rate",
+        "method_note": "Latest headline CPI inflation, year-over-year. Not IMF WEO annual average.",
+        "display_year": "latest"
       },
       "peg_anchor__static": {
         "label": "Peg Anchor",
@@ -31525,15 +31901,19 @@
         "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
       },
       "policy_rate__2025e": {
-        "label": "Policy Rate",
+        "country": "United States",
+        "indicator_id": "policy_rate",
         "year": "2025e",
+        "value": 3.75,
+        "raw": "3.75",
         "unit": "%",
-        "value": 4.375,
-        "text_value": null,
-        "raw": "4.375",
-        "approx": false,
-        "estimate": true,
-        "source": "Central bank official rate at year-end. Dec 2024 actual; Dec 2025 actual/estimate."
+        "missing": false,
+        "estimate": false,
+        "audited": true,
+        "source": "Trading Economics — Interest Rate country list",
+        "source_url": "https://tradingeconomics.com/country-list/interest-rate",
+        "method_note": "Latest available policy rate from Trading Economics. Not a 2025 forecast.",
+        "display_year": "latest"
       },
       "gdp_growth__2024": {
         "label": "GDP Growth",
