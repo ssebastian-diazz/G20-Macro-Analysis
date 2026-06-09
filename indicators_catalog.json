@@ -447,12 +447,12 @@
     "indicator_id": "govt_gross_debt",
     "label": "Govt Gross Debt",
     "category": "Fiscal",
-    "unit": "% GDP",
+    "unit": "%GDP",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "IMF Fiscal Monitor April 2026 (Table A1 AEs; Table C EMs).",
+    "source": "IMF DataMapper — World Economic Outlook April 2026",
     "sheet": "Macro Data",
     "subheaders": [
       "2024 %GDP",
@@ -460,7 +460,11 @@
     ],
     "numeric": true,
     "zero_line": true,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://www.imf.org/external/datamapper/GGXWDG_NGDP@WEO",
+    "confidence": "high",
+    "status": "audited_latest",
+    "method_note": "Current/latest column uses 2026 WEO projection where available; otherwise latest available WEO year."
   },
   "credit_privsect": {
     "indicator_id": "credit_privsect",
@@ -767,5 +771,15 @@
     "numeric": false,
     "zero_line": false,
     "higher_is_better": "contextual"
+  },
+  "credit_private_sector": {
+    "label": "Credit/Priv.Sect.",
+    "unit": "%GDP",
+    "source": "World Bank WDI FS.AST.PRVT.GD.ZS; BIS/FRED total credit to private non-financial sector where WDI is stale or unavailable",
+    "source_url": "https://data.worldbank.org/indicator/FS.AST.PRVT.GD.ZS",
+    "confidence": "medium-high",
+    "status": "audited_mixed_source_latest_available",
+    "method_note": "Private-sector credit as % of GDP. Uses World Bank WDI domestic credit to private sector where recent; uses BIS/FRED total credit to private non-financial sector for Canada and Saudi Arabia because WDI latest observations were stale.",
+    "alternate_source_url": "https://data.bis.org/topics/TOTAL_CREDIT/data"
   }
 }
