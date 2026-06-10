@@ -42,12 +42,12 @@
     "indicator_id": "neer_yoy",
     "label": "NEER YoY",
     "category": "External",
-    "unit": null,
+    "unit": "%",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "BIS broad basket EER (Dec YoY). Cross-checked: MUFG FX Outlook Jan 2026; TD Economics USD 2025 report; Mexperience.com; IMF ESR July 2025. +  = appreciation. EUR-zone countries share ECB-area NEER/REER.",
+    "source": "BIS Effective Exchange Rates",
     "sheet": "Macro Data",
     "subheaders": [
       "end-2024",
@@ -55,18 +55,22 @@
     ],
     "numeric": true,
     "zero_line": false,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://data.bis.org/topics/EER/data",
+    "confidence": "high",
+    "status": "audited_calculated_latest",
+    "method_note": "Nominal effective exchange rate YoY, broad basket. Calculated from latest monthly BIS index vs same month previous year. Positive = appreciation."
   },
   "reer_yoy": {
     "indicator_id": "reer_yoy",
     "label": "REER YoY",
     "category": "External",
-    "unit": null,
+    "unit": "%",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "BIS broad basket EER (Dec YoY). Cross-checked: MUFG FX Outlook Jan 2026; TD Economics USD 2025 report; Mexperience.com; IMF ESR July 2025. +  = appreciation. EUR-zone countries share ECB-area NEER/REER.",
+    "source": "BIS Effective Exchange Rates",
     "sheet": "Macro Data",
     "subheaders": [
       "end-2024",
@@ -74,18 +78,22 @@
     ],
     "numeric": true,
     "zero_line": false,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://data.bis.org/topics/EER/data",
+    "confidence": "high",
+    "status": "audited_calculated_latest",
+    "method_note": "Real effective exchange rate YoY, broad basket. Calculated from latest monthly BIS index vs same month previous year. Positive = appreciation."
   },
   "current_acct": {
     "indicator_id": "current_acct",
-    "label": "Current Acct",
+    "label": "Current Acct.",
     "category": "External",
-    "unit": "% GDP",
+    "unit": "%GDP",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "IMF ESR July 2025 (2024 actuals, BPM6); IMF WEO Apr 2026 (2025e).",
+    "source": "IMF DataMapper — World Economic Outlook April 2026",
     "sheet": "Macro Data",
     "subheaders": [
       "2024 %GDP",
@@ -93,18 +101,22 @@
     ],
     "numeric": true,
     "zero_line": true,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://www.imf.org/external/datamapper/BCA_NGDPD@WEO",
+    "confidence": "high",
+    "status": "audited_latest",
+    "method_note": "Current account balance, percent of GDP. Current/latest column uses 2026 WEO projection where available."
   },
   "trade_balance": {
     "indicator_id": "trade_balance",
     "label": "Trade Balance",
     "category": "External",
-    "unit": "% GDP",
+    "unit": "%GDP",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "WEO Oct 2025 / Apr 2026 (NX/GDP); 2025e estimated.",
+    "source": "World Bank WDI — External balance on goods and services (% of GDP)",
     "sheet": "Macro Data",
     "subheaders": [
       "2024 %GDP",
@@ -112,18 +124,22 @@
     ],
     "numeric": true,
     "zero_line": true,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://data.worldbank.org/indicator/NE.RSB.GNFS.ZS",
+    "confidence": "medium-high",
+    "status": "audited_latest_available",
+    "method_note": "External balance on goods and services, percent of GDP. Exports minus imports of goods and services, not goods-only merchandise balance."
   },
   "net_pri_income": {
     "indicator_id": "net_pri_income",
     "label": "Net Pri. Income",
     "category": "External",
-    "unit": "% GDP",
+    "unit": "%GDP",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "CA minus TB minus Net Current Transfers (WEO/BOP data).",
+    "source": "World Bank WDI — Net primary income (BoP, current US$)",
     "sheet": "Macro Data",
     "subheaders": [
       "2024 %GDP",
@@ -131,18 +147,22 @@
     ],
     "numeric": true,
     "zero_line": true,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://data.worldbank.org/indicator/BN.GSR.FCTY.CD",
+    "confidence": "medium-high",
+    "status": "audited_latest_available",
+    "method_note": "Net primary income from BoP current US$, divided by GDP current US$ to express as %GDP. Latest annual observation available."
   },
   "fin_account": {
     "indicator_id": "fin_account",
     "label": "Fin. Account",
     "category": "External",
-    "unit": "% GDP",
+    "unit": "%GDP",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "IMF ESR July 2025 (2024 actuals, BPM6); IMF WEO Apr 2026 (2025e).",
+    "source": "World Bank WDI — Net financial account (BoP, current US$)",
     "sheet": "Macro Data",
     "subheaders": [
       "2024 %GDP",
@@ -150,7 +170,11 @@
     ],
     "numeric": true,
     "zero_line": true,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://data.worldbank.org/indicator/BN.FIN.TOTL.CD",
+    "confidence": "medium-high",
+    "status": "audited_latest_available",
+    "method_note": "Net financial account from BoP current US$, divided by GDP current US$ to express as %GDP. Sign follows World Bank/IMF BoP convention. Latest annual observation available."
   },
   "fdi_net": {
     "indicator_id": "fdi_net",
@@ -270,12 +294,12 @@
     "indicator_id": "gfcf",
     "label": "GFCF",
     "category": "Real",
-    "unit": "% GDP",
+    "unit": "%GDP",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "World Bank WDI NE.GDI.FTOT.ZS; 2025e estimated from WEO GDI trend.",
+    "source": "World Bank WDI — Gross fixed capital formation (% of GDP)",
     "sheet": "Macro Data",
     "subheaders": [
       "2024 %GDP",
@@ -283,7 +307,11 @@
     ],
     "numeric": true,
     "zero_line": true,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://data.worldbank.org/indicator/NE.GDI.FTOT.ZS",
+    "confidence": "medium-high",
+    "status": "audited_latest_available",
+    "method_note": "Gross fixed capital formation, percent of GDP. Current/latest column uses latest available World Bank observation by country."
   },
   "priv_consumption": {
     "indicator_id": "priv_consumption",
@@ -312,14 +340,18 @@
     "available_years": [
       "2025e"
     ],
-    "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections.",
+    "source": "IMF DataMapper — World Economic Outlook April 2026",
     "sheet": "Macro Data",
     "subheaders": [
       "2025e USD"
     ],
     "numeric": true,
     "zero_line": false,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://www.imf.org/external/datamapper/NGDPDPC@WEO",
+    "confidence": "high",
+    "status": "audited_latest",
+    "method_note": "GDP per capita, current prices, U.S. dollars per capita. Current/latest column uses 2026 WEO projection where available."
   },
   "gdp_growth": {
     "indicator_id": "gdp_growth",
@@ -330,7 +362,7 @@
       "2024",
       "2025e"
     ],
-    "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections.",
+    "source": "IMF DataMapper — World Economic Outlook April 2026",
     "sheet": "Macro Data",
     "subheaders": [
       "2024 %",
@@ -338,7 +370,11 @@
     ],
     "numeric": true,
     "zero_line": true,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://www.imf.org/external/datamapper/NGDP_RPCH@WEO",
+    "confidence": "high",
+    "status": "audited_latest",
+    "method_note": "Real GDP growth, annual percent change. Current/latest column uses 2026 WEO projection where available."
   },
   "labor_prod": {
     "indicator_id": "labor_prod",
@@ -361,20 +397,24 @@
   },
   "tfp_growth": {
     "indicator_id": "tfp_growth",
-    "label": "TFP growth",
+    "label": "TFP Growth",
     "category": "Real",
-    "unit": null,
+    "unit": "%",
     "available_years": [
       "last avail."
     ],
-    "source": "IMF WEO April 2026. India on fiscal year basis. 2024=actuals; 2025e=projections.",
+    "source": "Our World in Data / Penn World Table 11.0",
     "sheet": "Macro Data",
     "subheaders": [
       "last avail."
     ],
     "numeric": true,
     "zero_line": false,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://ourworldindata.org/grapher/total-factor-productivity",
+    "confidence": "medium",
+    "status": "audited_calculated_latest",
+    "method_note": "Calculated from PWT/OWID TFP level as 100 * (TFP_t / TFP_{t-1} - 1)."
   },
   "inflation_cpi": {
     "indicator_id": "inflation_cpi",
@@ -489,12 +529,12 @@
     "indicator_id": "niip",
     "label": "NIIP",
     "category": "External",
-    "unit": "% GDP",
+    "unit": "%GDP",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "IMF IIP statistics (Balance of Payments and IIP database). 2024 actuals (most countries); 2025e estimated. All as % of GDP.",
+    "source": "IMF IIP statistics / IMF External Sector Report",
     "sheet": "External Balance & Debt",
     "subheaders": [
       "2024 %GDP",
@@ -502,7 +542,11 @@
     ],
     "numeric": true,
     "zero_line": true,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "https://data.imf.org/Datasets/IIP",
+    "confidence": "medium",
+    "status": "metadata_cleaned_2024_observed_2025e_estimated",
+    "method_note": "NIIP values are expressed as % of GDP. 2024 is treated as the observed benchmark. 2025e is retained as an estimate and explicitly flagged; it should not be read as observed IIP data."
   },
   "gross_ext_assets": {
     "indicator_id": "gross_ext_assets",
@@ -544,14 +588,14 @@
   },
   "ext_debt_total": {
     "indicator_id": "ext_debt_total",
-    "label": "Ext. Debt (total)",
+    "label": "Ext. Debt Total",
     "category": "External",
-    "unit": "% GDP",
+    "unit": "%GDP",
     "available_years": [
       "2024",
       "2025e"
     ],
-    "source": "IMF Fiscal Monitor April 2026 (Table A1 AEs; Table C EMs).",
+    "source": "Original dashboard table — Ext. Debt (total)",
     "sheet": "External Balance & Debt",
     "subheaders": [
       "2024 %GDP",
@@ -559,7 +603,11 @@
     ],
     "numeric": true,
     "zero_line": true,
-    "higher_is_better": "contextual"
+    "higher_is_better": "contextual",
+    "source_url": "",
+    "confidence": "medium",
+    "status": "reset_to_original_dashboard_values",
+    "method_note": "Reset to original dashboard Ext. Debt (total) values. Values are expressed as %GDP. 2024 is treated as baseline/actual table value; 2025e is treated as estimated table value."
   },
   "st_ext_debt": {
     "indicator_id": "st_ext_debt",
@@ -781,5 +829,32 @@
     "status": "audited_mixed_source_latest_available",
     "method_note": "Private-sector credit as % of GDP. Uses World Bank WDI domestic credit to private sector where recent; uses BIS/FRED total credit to private non-financial sector for Canada and Saudi Arabia because WDI latest observations were stale.",
     "alternate_source_url": "https://data.bis.org/topics/TOTAL_CREDIT/data"
+  },
+  "labor_productivity": {
+    "label": "Labor Prod. Growth",
+    "unit": "%",
+    "source": "Our World in Data / Penn World Table 11.0",
+    "source_url": "https://ourworldindata.org/grapher/labor-productivity-per-hour-pennworldtable",
+    "confidence": "medium-high",
+    "status": "audited_calculated_latest",
+    "method_note": "Calculated from PWT/OWID labor productivity level as 100 * (LaborProd_t / LaborProd_t-1 - 1)."
+  },
+  "private_consumption": {
+    "label": "Priv. Consumption",
+    "unit": "%GDP",
+    "source": "World Bank WDI — Households and NPISHs final consumption expenditure (% of GDP)",
+    "source_url": "https://data.worldbank.org/indicator/NE.CON.PRVT.ZS",
+    "confidence": "medium-high",
+    "status": "audited_latest_available",
+    "method_note": "Households and NPISHs final consumption expenditure, percent of GDP. Current/latest column uses latest available World Bank observation by country."
+  },
+  "reserves_gdp": {
+    "label": "Int. Reserves",
+    "unit": "%GDP",
+    "source": "World Bank WDI — Total reserves incl. gold (current US$)",
+    "source_url": "https://data.worldbank.org/indicator/FI.RES.TOTL.CD",
+    "confidence": "medium-high",
+    "status": "audited_latest_available",
+    "method_note": "Total reserves including gold, current US$, divided by GDP current US$ to express as %GDP. Latest annual observation with GDP denominator."
   }
 }
